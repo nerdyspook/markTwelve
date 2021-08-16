@@ -21,7 +21,7 @@
 
         <ul class="list nav__list">
             <li class="nav__item">
-                <a href="/">Is Triangle</a>
+                <a href="/index.html">Is Triangle</a>
             </li>
             <li class="nav__item">
                 <a href="/html/quiz.html">Quiz</a>
@@ -35,25 +35,22 @@
         </ul>
     </nav>
 
+
     <!-- ============================== Main ========================== -->
     <main>
-        <h1>Is it a Triangle ?</h1>
-        <div class="input">
-            <label for="angle1">Angle 1</label>
-            <input type="number" class="angle-input" id="angle1">
-        </div>
-        <div class="input">
-            <label for="angle2">Angle 2</label>
-            <input type="number" class="angle-input" id="angle2">
-        </div>
-        <div class="input">
-            <label for="angle3">Angle 3</label>
-            <input type="number" class="angle-input" id="angle3">
-        </div>
-        
-        <button id="btn-check">Is Triangle ?</button>
+        <h1>Calculate Area of a triangle</h1>
 
-        <div id="output"></div>
+        <div>
+            <label for="value1">Enter base of a triangle</label>
+            <input type= "number" class="input" id="value1">
+        </div>
+        <div>
+            <label for="value2">Enter height of a triangle</label>
+            <input type= "number" class="input" id="value2">
+        </div>
+
+        <button class="calculate">Calculate</button>
+        <div class="output" style="font-size: 1.5rem;"></div>
     </main>
     
 
@@ -72,6 +69,6 @@
             <p>Created with love by NerdySpook ♥️</p>
         </section>
     </footer>
-    <script src="/js/main.js"></script>
+    <script src="/js/area.js"></script>
 </body>
 </html>

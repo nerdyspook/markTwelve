@@ -12,6 +12,12 @@
     <!-- =========================== CSS ============================= -->
     <link rel="stylesheet" href="/css/styles.css">
 
+    <style>
+        label {
+            text-align: left;
+        }
+    </style>
+
     <title>Fun with Triangles</title>
 </head>
 <body>
@@ -21,7 +27,7 @@
 
         <ul class="list nav__list">
             <li class="nav__item">
-                <a href="/">Is Triangle</a>
+                <a href="/index.html">Is Triangle</a>
             </li>
             <li class="nav__item">
                 <a href="/html/quiz.html">Quiz</a>
@@ -35,24 +41,38 @@
         </ul>
     </nav>
 
+
     <!-- ============================== Main ========================== -->
     <main>
-        <h1>Is it a Triangle ?</h1>
-        <div class="input">
-            <label for="angle1">Angle 1</label>
-            <input type="number" class="angle-input" id="angle1">
-        </div>
-        <div class="input">
-            <label for="angle2">Angle 2</label>
-            <input type="number" class="angle-input" id="angle2">
-        </div>
-        <div class="input">
-            <label for="angle3">Angle 3</label>
-            <input type="number" class="angle-input" id="angle3">
-        </div>
-        
-        <button id="btn-check">Is Triangle ?</button>
+        <h1>Quiz on triangles</h1>
+        <p>For each correct answer you will get 1 point</p>
 
+        <form action="" class="quiz__form">
+            <div class="question__container">
+                <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <label ><input name="question1" type="radio" value="45°">45°</label>
+                <label ><input name="question1" type="radio" value="60°">60°</label>
+                <label ><input name="question1" type="radio" value="90°">90°</label>
+            </div>
+            <div class="question__container">
+                <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <label ><input name="question2" type="radio" value="obtuse">Obtuse</label>
+                <label ><input name="question2" type="radio" value="acute">Acute</label>
+                <label ><input name="question2" type="radio" value="right angled">Right angled</label>
+            </div>
+            <div class="question__container">
+                <p>A triangle can have</p>
+                <label ><input name="question3" type="radio" value="two right angles">two right angles</label>
+                <label ><input name="question3" type="radio" value="one right angle">one right angle</label>
+            </div>
+            <div class="question__container">
+                <p>Which of the following triangles are always similar?</p>
+                <label ><input name="question4" type="radio" value="Isosceles triangle">Isosceles triangle</label>
+                <label ><input name="question4" type="radio" value="Equilateral triangle">Equilateral triangle</label>
+            </div>
+        </form>
+
+        <button id="submit">Submit</button>
         <div id="output"></div>
     </main>
     
@@ -72,6 +92,6 @@
             <p>Created with love by NerdySpook ♥️</p>
         </section>
     </footer>
-    <script src="/js/main.js"></script>
+    <script src="/js/quiz.js"></script>
 </body>
 </html>

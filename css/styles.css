@@ -41,9 +41,13 @@ a {
 
 main {
     height: 100vh;
-    padding: 7rem 0;
+    padding: 5rem 0;
     margin: 0 auto;
     display: block;
+}
+
+main>p {
+    font-size: 1.2rem;
 }
 
 label {
@@ -51,8 +55,20 @@ label {
     padding: 1rem;
 }
 
+.quiz__form p {
+    font-weight: bold;
+}
+
+label {
+    text-align: center;
+}
+
 button {
     margin: 1rem;
+}
+
+#output {
+    padding-bottom: 8rem;
 }
 
 /* ============================ Footer ========================= */
